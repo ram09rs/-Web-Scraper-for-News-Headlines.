@@ -1,0 +1,39 @@
+==============================
+📰 News Headlines Web Scraper
+==============================
+
+📌 Overview:
+This Python script scrapes top news headlines from a selected news website and saves them to a .txt file. It uses `requests` to fetch the HTML content and `BeautifulSoup` to parse and extract headline tags.
+
+🛠️ Tools & Libraries:
+- Python 3.x
+- requests
+- beautifulsoup4
+
+🚀 How to Run:
+1. Install Dependencies:
+   pip install requests beautifulsoup4
+
+2. Run the Script:
+   python news_scraper.py
+
+3. Output:
+   - A file named top_headlines.txt will be created in the same directory.
+   - It contains a numbered list of extracted headlines.
+
+🧠 How It Works:
+- Sends an HTTP GET request to the news website.
+- Parses the HTML using BeautifulSoup.
+- Extracts text from <h2> and <h3> tags.
+- Filters and saves the headlines to a .txt file.
+
+🔧 Customization:
+- To change the target website, modify the URL variable in the script.
+- You can adjust the tags or classes used for headlines depending on the site’s structure.
+
+📂 Files:
+- news_scraper.py        → Main Python script for scraping headlines
+- top_headlines.txt      → Output file containing scraped headlines
+
+📌 License:
+This project is open-source and free to use for educational and personal purposes.
